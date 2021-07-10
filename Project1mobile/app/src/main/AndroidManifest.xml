@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.project1mobile">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_op_logo_cutout"
+        android:label="Online Pantry"
+        android:roundIcon="@drawable/ic_op_logo_cutout"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Project1mobile.NoActionBar">
+        <!--<provider
+            &lt;!&ndash;android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.project1mobile.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">&ndash;&gt;
+
+        </provider>-->
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+        <activity android:name=".ScannerActivity"></activity>
+        <activity android:name=".DatabaseActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".WorkActivity" />
+        <activity android:name=".Post_Product"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

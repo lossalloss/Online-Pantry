@@ -1,0 +1,8 @@
+    <resources>
+    <string name="app_name">Project1mobile</string>
+    <string name="title_activity_post__product">Post_Product</string>
+    <string name="channel_name">Online Pantry</string>
+    <string name="channel_description">Online Pantry notification channel</string>
+    <string name="email"></string>
+    <string name="psw"></string>
+</resources>

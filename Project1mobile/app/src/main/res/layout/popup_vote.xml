@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:barrierMargin="6dp">
+
+    <TextView
+        android:id="@+id/productInfo"
+        android:layout_width="327dp"
+        android:layout_height="43dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:autoSizeMaxTextSize="200sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voteTitle" />
+
+    <Button
+        android:id="@+id/vote"
+        android:layout_width="138dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:text="yes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productInfo" />
+
+    <Button
+        android:id="@+id/voteNo"
+        android:layout_width="138dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:text="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productInfo" />
+
+    <TextView
+        android:id="@+id/voteTitle"
+        android:layout_width="328dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="4dp"
+        android:text="Add this item to your pantry?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
